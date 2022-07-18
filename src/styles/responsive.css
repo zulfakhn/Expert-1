@@ -1,0 +1,40 @@
+@media (max-width: 80em) {
+}
+
+@media (max-width: 62.5em) {
+}
+
+@media (max-width: 47em) {
+  .menu {
+    display: block;
+    z-index: 111;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    /* visibility: hidden; */
+    transform: translateX(100%);
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .active {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@media (max-width: 30em) {
+  .container h1 a {
+    font-size: 20px;
+  }
+}
